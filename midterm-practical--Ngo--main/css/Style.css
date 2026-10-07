@@ -1,0 +1,111 @@
+figure {
+  background: var(--light-pink);
+  border: 2px solid var(--pink);
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+}
+
+figure img {
+  border-radius: 0;
+  height: 210px;
+  margin: 0;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+figure:hover img {
+  transform: scale(1.06);
+}
+
+figcaption {
+  color: var(--dark-pink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.8rem;
+}
+
+form {
+  display: grid;
+  gap: 0.8rem;
+  max-width: 650px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #c99b9b;
+  border-radius: 6px;
+  font: inherit;
+  padding: 0.7rem;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--dark-pink);
+  box-shadow: 0 0 0 3px rgba(185, 87, 112, 0.18);
+  outline: none;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button,
+input[type="submit"] {
+  background: var(--dark-pink);
+  border: none;
+  border-radius: 6px;
+  color: var(--white);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.8rem 1.2rem;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background: var(--brown);
+}
+
+footer {
+  background: var(--brown);
+  color: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  header {
+    min-height: 260px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  section,
+  article {
+    padding: 1rem;
+  }
+
+  th,
+  td {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}

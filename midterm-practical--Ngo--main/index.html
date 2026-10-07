@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yanzelle's Bake Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Yanzelle's Bake Shop</h1>
+    <p>Freshly baked treats made with love.</p>
+  </header>
+
+  <nav aria-label="Main navigation">
+    <a href="#about">About</a> |
+    <a href="#menu">Menu</a> |
+    <a href="#order">Order</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Our Bake Shop</h2>
+
+      <img
+        src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800"
+        alt="Freshly baked bread and pastries on a bakery table"
+        width="400"
+      >
+
+      <p>
+        Welcome to Yanzelle's Bake Shop! We make delicious cakes,
+        breads, cookies, and pastries for every occasion.
+      </p>
+    </section>
+
+    <section id="menu">
+      <h2>Our Menu</h2>
+
+      <table>
+        <caption>Popular Baked Goods</caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Item</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Chocolate Cake</td>
+            <td>Moist chocolate cake with creamy frosting</td>
+            <td>₱650</td>
+          </tr>
+
+          <tr>
+            <td>Butter Croissant</td>
+            <td>Flaky and buttery French pastry</td>
+            <td>₱85</td>
+          </tr>
+
+          <tr>
+            <td>Chocolate Chip Cookies</td>
+            <td>Soft cookies filled with chocolate chips</td>
+            <td>₱50</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="order">
+      <h2>Place an Order</h2>
+
+      <form action="#" method="post">
+        <p>
+          <label for="name">Full Name:</label><br>
+          <input type="text" id="name" name="name" required>
+        </p>
+
+        <p>
+          <label for="email">Email Address:</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="item">Choose an Item:</label><br>
+          <select id="item" name="item" required>
+            <option value="">Select an item</option>
+            <option value="cake">Chocolate Cake</option>
+            <option value="croissant">Butter Croissant</option>
+            <option value="cookies">Chocolate Chip Cookies</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="quantity">Quantity:</label><br>
+          <input type="number" id="quantity" name="quantity" min="1" required>
+        </p>
+
+        <p>
+          <label for="message">Special Instructions:</label><br>
+          <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        </p>
+
+        <button type="submit">Submit Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Yanzelle's Bake Shop</p>
+  </footer>
+</body>
+</html>
